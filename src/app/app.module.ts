@@ -23,6 +23,8 @@ import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {RouterModule} from "@angular/router";
 import {AuthGuard} from "./components/auth/auth.guard";
 import {AuthInterceptor} from "./components/auth/auth.interceptor";
+import { SignupComponent } from './components/signup/signup.component';
+import { MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -34,7 +36,8 @@ import {AuthInterceptor} from "./components/auth/auth.interceptor";
     AdminComponent,
     UserComponent,
     LoginComponent,
-    ForbiddenComponent
+    ForbiddenComponent,
+    SignupComponent
   ],
 
   imports: [
@@ -49,7 +52,8 @@ import {AuthInterceptor} from "./components/auth/auth.interceptor";
     MatListModule,
     FormsModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    MatFormFieldModule
 
 
   ],

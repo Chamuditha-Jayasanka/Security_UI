@@ -1,0 +1,51 @@
+<div class="register-area">
+    <div class="row m-0">
+      <div class="left-side col-lg-6 col-md-6 p-0">
+        <div class="register-imge">
+           <img width="600px" height="600px" src="../../../assets/308839238_196632759402808_8360777195512064969_n.jpg" alt="image">
+
+        </div>
+      </div>
+      <div class="right-side col-lg-6 col-md-6 p-0">
+        <div class="register-content">
+            <div class="register-form">
+                <h3>Open up your spring boot account Now</h3>
+                <P>Already sign up? <a routerLink="/login"> Log in</a></P>
+                 <form (ngSubmit)="register()">
+                    <div class="form-group">
+                        <input type="email" name="email" [(ngModel)]="signup.username" id="email" placeholder="Your E-mail Address" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" name="password" [(ngModel)]="signup.userPassword" id="password" placeholder="Create your password" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="firstname" [(ngModel)]="signup.userFirstName" id="firstname" placeholder="Write Your Firstname" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" name="lastname" [(ngModel)]="signup.userLastName" id="lastname" placeholder="Write your last name" class="form-control">
+                    </div>
+                    <button type="submit">sign up</button>
+                    <div class="connect-with-facebook">
+                        <span>Or</span>
+                      <button type="submit" class="facebook">
+                        <i class="bx bxl-facebook"></i>Connect With Facebook
+                      </button>
+                      <button type="submit" class="twitter">
+                        <i class="bx bxl-twitter"></i>Connect With Twitter
+                      </button>
+                      <button type="submit" class="google">
+                        <i class="bx bxl-google"></i>Connect With google
+                      </button>
+                    </div>
+                 </form>
+
+            </div>
+        </div>
+
+      </div>
+
+    </div>
+</div>

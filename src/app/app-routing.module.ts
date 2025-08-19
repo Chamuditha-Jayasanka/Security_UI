@@ -7,8 +7,10 @@ import {AdminComponent} from "./components/admin/admin.component";
 import {LoginComponent} from "./components/login/login.component";
 import {ForbiddenComponent} from "./components/forbidden/forbidden.component";
 import {AuthGuard} from "./components/auth/auth.guard";
+import {SignupComponent} from "./components/signup/signup.component";
 
 const routes: Routes = [
+  {path:'',component:SignupComponent},
   {path:'cars',component:CarComponent},
   {path:'home',component:HomeComponent},
   {path:'user',component:UserComponent, canActivate:[AuthGuard], data:{roles:['User']}},
